@@ -77,6 +77,7 @@
 .content {
     display: inline-block;
 }
+
 .title {
     font-family: Fraunces;
     font-weight: 900;
@@ -89,17 +90,23 @@
     padding-top: 140px;
     height: 150px;
 }
+
 .grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    width: 100%;
 }
 
 .grid-item {
    width: 50%;
    display: flex;
    justify-content: center;
+}
+
+.grid-item-image {
+    width: 100%;
+   
 }
 
 .grid-item-content { 
@@ -159,20 +166,15 @@
     margin-top: -8px;
 }
 
-.image-content {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-
-
 #fifth {
+  
   position: relative;
   display: inline-block;
 }
 
 #image-title-1, #image-text-1 {
     color: hsl(167, 40%, 24%);
+
 }
 
 #sixth {
@@ -184,6 +186,22 @@
     color: hsl(198, 62%, 26%);
 }
 
+.last-grid-item-title {
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Fraunces;
+    color: hsl(212, 27%, 19%);
+}
+
+.last-grid-item-text {
+    padding-bottom: 50px;
+    font-family: Barlow;
+    font-size: 18;
+    font-weight: 600;
+    line-height: 1.6;
+    color: hsl(232, 10%, 55%);
+}
 
 .image-content {
   position: absolute;
@@ -196,12 +214,12 @@
   right: 0;
   left: 0;
   font-size: 30px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 
-.grid-item-image {
-    width: 100%;
-}
 
 .client-grid {
     display: flex;
@@ -327,12 +345,16 @@
 .social {
     padding-right: 10px;
     text-align: center;
-    width: 2%;
+    width: 30px;
 }
 
-@media only screen and (max-width: 550px) {
+
+@media only screen and (max-width: 768px) {
     .menu-container {
         display: none;
+    }
+    .title {
+        font-size: 30px;
     }
     .grid {
         flex-direction: column;
@@ -341,19 +363,41 @@
         width: 100%;
         height: 100%;
     }
-    .title{
-        font-size: 18px;
-    }
     .grid-item-title {
-        font-size: 18px ;
-        padding-bottom: 10px ;
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .image-content {
+        width: 80%;
     }
     .grid-item-text {
-        font-size: 10px ;
-        padding-bottom: 10px ;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
     }
+    .grid-item-button span {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    
+    .grid-item-content {
+        align-items: center;
+        width: 90%;
+    }
+
+    .last-grid-item-title {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
     .client-grid{
         flex-direction: column;
+    }
+    .client-grid-item-content {
+        width: 100%;
     }
     .client-grid-item{
         width: 100%;
@@ -364,4 +408,20 @@
     .footer-grid-item{
         width: 50%;
     }
+}
+
+@media only screen and (max-width: 1440px) {
+    .last-grid-item-title {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .last-grid-item-text {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .image-content {
+        top: 30%;
+        width: 70%;
+    }
+
 }
