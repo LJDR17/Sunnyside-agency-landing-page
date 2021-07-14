@@ -53,13 +53,13 @@
 }
 
 .home{
-  background: url('images/desktop/image-header.jpg') no-repeat;
+  background: url('images/desktop/image-header.jpg') no-repeat ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: bottom center;
-  height: 85%;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -70,7 +70,7 @@
 
 .misc-items {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 8%;
     height: 500px;
     justify-content: center;
 }
@@ -88,8 +88,8 @@
 }
 
 .arrow {
-    padding-top: 50px;
-    height: 125px;
+    padding-top: 5%;
+    height: 150px;
 }
 
 .grid {
