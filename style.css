@@ -202,6 +202,8 @@
     font-weight: 600;
     line-height: 1.6;
     color: hsl(232, 10%, 55%);
+    width: 80%;
+    
 }
 
 .image-content {
@@ -210,7 +212,7 @@
   text-align: center;
   width: 50%;
   margin: auto;
-  top: 40%;
+  top: 50%;
   bottom: 0;
   right: 0;
   left: 0;
@@ -237,7 +239,6 @@
     letter-spacing: 7px;
     text-align: center;
 }
-
 
 .client-grid-item {
    width: 33%;
@@ -348,7 +349,7 @@
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 880px) {
     .menu-container {
         display: none;
     }
@@ -357,6 +358,24 @@
     }
     .grid {
         flex-direction: column;
+    }
+    #first {
+        order: 1;
+    }
+    #second {
+        order: 0;
+    }
+    #third {
+        order: 2;
+    }
+    #fourth {
+        order: 3;
+    }
+    #fifth {
+        order:4;
+    }
+    #sixth {
+        order: 5;
     }
     .grid-item{
         width: 100%;
@@ -368,7 +387,6 @@
         padding-top: 50px;
         text-align: center;
     }
-
     .image-content {
         width: 80%;
     }
@@ -381,17 +399,17 @@
         padding-bottom: 50px;
         padding-top: 20px;
     }
-    
     .grid-item-content {
         align-items: center;
         width: 90%;
     }
-
     .last-grid-item-title {
         font-size: 25px;
         padding-bottom: 10px;
     }
-
+    .last-grid-item-text {
+        font-size: 18px;
+    }
     .client-grid{
         flex-direction: column;
     }
@@ -409,29 +427,26 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1800px) {
     .last-grid-item-title {
-        font-size: 30px;
         padding-bottom: 10px;
     }
     .last-grid-item-text {
-        font-size: 18px;
         padding-bottom: 10px;
     }
     .image-content {
         top: 30%;
         width: 70%;
     }
-
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1112px) {
     .last-grid-item-title {
         font-size: 25px;
         padding-bottom: 10px;
     }
     .last-grid-item-text {
-        font-size: 16px;
+       
         padding-bottom: 10px;
     }
     .image-content {
@@ -444,7 +459,6 @@
     .grid-item-button span {
         font-size: 16px;
     }
-
 }
 
 @media only screen and (min-width: 2560px) {
