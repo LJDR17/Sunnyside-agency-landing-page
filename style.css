@@ -70,7 +70,7 @@
 
 .misc-items {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 70px;
     height: 500px;
     justify-content: center;
 }
@@ -88,8 +88,8 @@
 }
 
 .arrow {
-    padding-top: 100px;
-    height: 150px;
+    padding-top: 50px;
+    height: 125px;
 }
 
 .grid {
